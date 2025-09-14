@@ -1,0 +1,105 @@
+@media screen and (min-width: 1024px) {
+    .staff-list {
+        margin-top: 64px;
+    }
+}
+
+.staff-list {
+	font-family: 'Noto Sans';
+}
+
+.staff-list h1 {
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.staff-list .content-list-page__filter {
+	list-style-type: none;
+}
+
+.staff-list .search-full-text {
+	border: none;
+	padding: 24px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.staff-list .search-full-text .form-type-select {
+	width: 100%;
+}
+
+.staff-list .item-list ul {
+	display: grid;
+	margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+	.staff-list .item-list ul {
+  	grid-template-columns: repeat(3, 1fr);
+	}
+	.staff-list .search-full-text {
+    flex-direction: row;
+  }
+  .staff-list .search-full-text .form-type-select {
+  	width: initial;
+  }
+}
+
+@media screen and (max-width: 900px) {
+    .staff-list .item-list ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .staff-list .item-list ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+  
+}
+
+.staff-list .item-list > h3 {
+	font-family: "Lora", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.staff-list .item-list > h3::before {
+	top: auto;
+  bottom: -0.4em;
+  width: 80px;
+  right: auto;
+  position: absolute;
+  content: "";
+  background-image: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='81' height='16' viewBox='0 0 81 16' fill='none'%3E%3Cpath d='M3 10C29.8561 3.71312 50.1886 4.9889 78 5.35819' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E);
+}
+
+.staff-list ul.item li {
+	border: 1px solid #eee9e5;
+	padding: 1rem;
+}
+
+.staff-list .views-field-title h3 {
+	font-family: 'Lora', sans-serif;
+  font-weight: normal;
+  font-size: clamp(1.3125rem, 1.2668rem + 0.1951vw, 1.4375rem);
+  line-height: 25px;
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.staff-list .views-field-field-staff-position h4 {
+	word-break: break-word;
+}
+
+

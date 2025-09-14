@@ -1,0 +1,29 @@
+uuid: ff88ed4c-2c38-4c44-8702-1fe182d75112
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_staff_library
+    - node.type.staff
+    - taxonomy.vocabulary.staff_library
+id: node.staff.field_staff_library
+field_name: field_staff_library
+entity_type: node
+bundle: staff
+label: Bibliotek
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      staff_library: staff_library
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: staff_library
+field_type: entity_reference

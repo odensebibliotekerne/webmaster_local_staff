@@ -1,0 +1,75 @@
+uuid: b3e4364d-ea17-46c0-a6b6-5ed5f8398312
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.staff.field_staff_email
+    - field.field.node.staff.field_staff_library
+    - field.field.node.staff.field_staff_location
+    - field.field.node.staff.field_staff_media
+    - field.field.node.staff.field_staff_phone
+    - field.field.node.staff.field_stilling
+    - node.type.staff
+  module:
+    - user
+id: node.staff.default
+targetEntityType: node
+bundle: staff
+mode: default
+content:
+  field_staff_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_staff_library:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_staff_location:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_staff_media:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_staff_phone:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_stilling:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  preview_token: true
+  search_api_excerpt: true

@@ -1,0 +1,11 @@
+uuid: 3aec9625-4fd2-4fff-b4a2-2fb1c5b92a82
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.staff_location
+id: taxonomy_term.staff_location
+target_entity_type_id: taxonomy_term
+target_bundle: staff_location
+default_langcode: und
+language_alterable: false

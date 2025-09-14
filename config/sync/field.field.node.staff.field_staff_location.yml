@@ -1,0 +1,29 @@
+uuid: 92c2b0b7-88b4-4570-93b6-eb807d156045
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_staff_location
+    - node.type.staff
+    - taxonomy.vocabulary.staff_location
+id: node.staff.field_staff_location
+field_name: field_staff_location
+entity_type: node
+bundle: staff
+label: Afdeling
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      staff_location: staff_location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

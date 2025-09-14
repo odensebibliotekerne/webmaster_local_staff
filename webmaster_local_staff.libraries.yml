@@ -1,0 +1,4 @@
+webmaster_local_staff:
+  css:
+    theme: 
+      css/webmaster_local_staff.css: {}

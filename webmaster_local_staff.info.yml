@@ -1,0 +1,5 @@
+name: 'Personaleoversigt'
+type: module
+description: 'Modul til en personaleoversigt i DPL CMS'
+package: 'Local'
+core_version_requirement: ^10

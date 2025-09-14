@@ -1,0 +1,34 @@
+uuid: 0f029cd3-27ba-4608-8b55-30558d7dc307
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_staff_media
+    - media.type.image
+    - node.type.staff
+  content:
+    - 'media:image:ee00a64c-0591-4773-8928-246d842d666c'
+id: node.staff.field_staff_media
+field_name: field_staff_media
+entity_type: node
+bundle: staff
+label: Billede
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: ee00a64c-0591-4773-8928-246d842d666c
+    weight: 0
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

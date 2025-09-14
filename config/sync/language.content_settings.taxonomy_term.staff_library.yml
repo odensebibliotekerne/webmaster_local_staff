@@ -1,0 +1,11 @@
+uuid: 16775f6e-d223-4278-95dd-2e5f8183e1d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.staff_library
+id: taxonomy_term.staff_library
+target_entity_type_id: taxonomy_term
+target_bundle: staff_library
+default_langcode: und
+language_alterable: false

@@ -1,0 +1,21 @@
+uuid: c3d16ea3-df35-4f8b-b00b-2db2237fd893
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_staff_phone
+    - node.type.staff
+  module:
+    - telephone
+id: node.staff.field_staff_phone
+field_name: field_staff_phone
+entity_type: node
+bundle: staff
+label: Telefon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

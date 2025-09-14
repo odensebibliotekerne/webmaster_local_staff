@@ -1,0 +1,6 @@
+services:
+  webmaster_local_staff.event_subscriber:
+    class: Drupal\webmaster_local_staffn\EventSubscriber\OverlayConfigEventSubscriber
+    autowire: true
+    tags:
+      - { name: event_subscriber }
