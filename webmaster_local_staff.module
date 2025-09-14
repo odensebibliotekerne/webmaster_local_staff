@@ -14,19 +14,3 @@ function webmaster_local_staff_page_attachments(array &$attachments) {
 
 }
 
-/**
- * Implements hook_views_pre_render().
- */
-function webmaster_local_staff_views_pre_render(\Drupal\views\ViewExecutable $view) {
-  // Check if this is the right View and display.
-  if ($view->id() === 'staff' && $view->current_display === 'page_1') {
-    // Add a custom header before the rows.
-    $view->attachment_before[] = [
-      '#type' => 'html_tag',
-      '#tag' => 'header',
-      '#value' => '<h1>' . t('Personalet på bibliotekerne') . '</h1>',
-      '#attributes' => ['class' => ['staff-header']],
-    ];
-  }
-}
-
